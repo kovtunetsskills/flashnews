@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <title>FlashNews!</title>
+</head>
+<body>
+    <body class="page light-theme">
+        <header class="page-header">
+          <div class="container">
+            <a class="header-logo">
+              <img src="img/main-logo.svg" width="67" height="29" alt="Логотип порталу новин">
+            </a>
+            <button class="menu menu-open" type="button">Меню</button>
+            <nav class="main-menu">
+              <ul>
+                <li>
+                  <a href="#">Колонка редактора</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+                <li>
+                  <a href="subscribe.html">Підписка</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+    
+        <main class="index-main">
+          <div class="container">
+            <h1 class="visually-hidden">Портал новин FlashNews!</h1>
+            <div class="news-view">
+              <button class="row-view view-checked" type="button">Список</button>
+              <button class="tile-view" type="button">Плитка</button>
+              <select class="filter" name="news-filter" id="">
+              <option value="IT">it</option>
+              <option value="cats">Котики</option>
+              <option value="games">Ігри</option>
+              <option value="HR">HR</option>
+              <option value="all" selected>всі новини</option>
+            </select>
+            </div>
+            <section class="news-list">
+              <h2 class="visually-hidden">Всі новини</h2>
+              <article class="news-block new-block" data-category="IT">
+                <img src="img/new-graph.jpg" alt="Нова бібліотека">
+                <div class="new-block-text">
+                  <h3>Нова бібліотека для створення графіків</h3>
+                  <p>Тепер можна створити дашборд за лічені секунди.</p>
+                  <span class="new-tag">#It</span>
+                  <time datetime="2022-10-16">16 жовтня 2022</time>
+                </div>
+              </article>
+              <article class=" news-block new-block" data-category="cats">
+                <img src="img/new-robot.jpg" alt="А що там у роботів?">
+                <div class="new-block-text">
+                  <a href="robot.html"><h3>А що там у роботів?</h3></a>
+                  <p>У робототехніці відбувається багато цікавого, ця новина могла б бути про це, але ні.</p>
+                  <span class="new-tag">#Котики</span>
+                  <time datetime="2022-10-15">15 жовтня 2022</time>
+                </div>
+              </article>
+              <article class=" news-block new-block" data-category="HR" >
+                <img src="img/new-loop.jpg" alt="Нескінченні цикли">
+                <div class="new-block-text">
+                  <h3>Нескінченні цикли: час зав'язувати з цим</h3>
+                  <p>Британські вчені з'ясували, що робота ПЗ безпосередньо залежить від наявності в ньому нескінченних циклів.</p>
+                  <time datetime="2022-10-14">14 жовтня 2022</time>
+                </div>
+              </article>
+              <article class="news-block new-block"  data-category="games">
+                <img src="img/new-drone.jpg" alt="Кадри з дрону">
+                <div class="new-block-text">
+                  <h3>Шок! Секретні кадри з дрона-розвідника</h3>
+                  <p>Ніхто не очікував, що за стінами відбувається ТАКЕ…</p>
+                  
+                  <time datetime="2022-10-13">13 жовтня 2022</time>
+                </div>
+              </article>
+              <article class="new-block">
+                <img src="img/new-research.jpg" alt="Новина 5">
+                <div class="new-block-text">
+                  <h3>Зі світу психології</h3>
+                  <p>Дослідження показують, що й робити більше, можна зробити більше.</p>
+                  <time datetime="2022-10-12">12 жовтня 2022</time>
+                </div>
+              </article>
+              <article class="new-block">
+                <img src="img/new-cat.jpg" alt="Новина 6">
+                <div class="new-block-text">
+                  <h3>Раптово</h3>
+                  <p>Виявляється, щоб почати вивчати JavaScript, необов'язково бути карасем.</p>
+                  <time datetime="2022-10-11">11 жовтня 2022</time>
+                </div>
+              </article>
+            </section>
+          </div>
+        </main>
+    
+        <aside class="cookies-agreement">
+          <p>Поки ви знаходитесь на нашому сайті та читаєте новини, ми використовуємо ваші кукіс. Дуже сподіваємось, що ви не проти.</p>
+          <button class="button" type="button">Окей, продовжуйте</button>
+        </aside>
+    
+        <footer class="page-footer">
+          <div class="container">
+            <p>© FlashNews!</p>
+            <a class="footer-logo">
+              <img src="img/white-logo.svg" alt="Логотип порталу FlashNews!">
+            </a>
+          </div>
+        </footer>
+        <script src="/js/filter.js"></script>
+    <script src="js/script_menu.js"></script>
+</body>
+</html>

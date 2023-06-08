@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/raiting.css">
+    <title>FlashNews!</title>
+</head>
+<body class="page light-theme">
+    <header class="page-header">
+        <div class="container">
+            <a class="header-logo">
+            <img src="img/main-logo.svg" width="67" height="29" alt="Логотип порталу новин">
+            </a>
+            <button class="menu menu-open" type="button">Меню</button>
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="#">Колонка редактора</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                    <li>
+                        <a href="subscribe.html">Підписка</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="raiting-main">
+        <h1>Оцініть наш портал FlashNews!</h1>
+        <section>
+            <h2>Наскільки вам сподобались наші новини?</h2>
+            <div class="raiting-answear">
+                <div class="answear-cont">
+                    <input type="radio" class="review" data-evaluation="bad" value="bad" name="raitingAnswear"><span>Все жахливо</span>
+                </div>
+                <div class="answear-cont">
+                    <input type="radio" class="review" data-evaluation="bad" value="bad" name="raitingAnswear"><span>Так собі</span>
+                </div>
+                <div class="answear-cont">
+                    <input type="radio" class="review" data-evaluation="good" value="good" name="raitingAnswear"><span>Хочу більше новин</span>
+                </div>
+                <div class="answear-cont">
+                    <input type="radio" class="review" data-evaluation="good" value="good" name="raitingAnswear"><span>Піде</span>
+                </div>
+                <div class="answear-cont">
+                    <input type="radio" class="review" data-evaluation="good" value="good" name="raitingAnswear"><span>Краще не буває!</span>
+                </div>
+                <div class="answear-cont">
+                    <input type="radio" class="review" data-evaluation="good" value="good" name="raitingAnswear"><span>Мій улюблений сайт!</span>
+                </div>
+                <button onclick="subbmit()" class="submit-button">Відправити відгук</button>
+                <p class="error">Оберіть інший відгук</p>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <p>© FlashNews!</p>
+            <a class="footer-logo">
+                <img src="img/white-logo.svg" alt="Логотип порталу FlashNews!">
+            </a>
+        </div>
+    </footer>
+    <script src="js/raiting.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/setting.css">
+     <link rel="stylesheet" href="css/style.css">
+     <title>FlashNews!</title>
+   </head>
+
+   <body class="page light-theme">
+     <header class="page-header">
+       <div class="container">
+         <span class="header-logo">
+           <a href="index.html"><img src="img/main-logo.svg" width="67" height="29" alt="Логотип порталу FlashNews!"></a>
+         </span>
+         <button class="theme-button" type="button">Змінити тему</button>
+       </div>
+     </header>
+
+     <main class="inner-news">
+     <article class="container">
+       <h1 class="inner-heading">🔥 Шок! Скандал! Сенсація!</h1>
+       <div class="news-full">
+         <img src="img/news-robot2.jpg" alt="Робот на курорті">
+         <div class="news-stats">
+           <button class="heart" type="button"><span class="likes-number">9</span></button>
+           <time datetime="2019-12-22">22 грудня 2019</time>
+         </div>
+         <p>Виявляється, для того, щоб почати програмувати JavaScript, необов'язково бути котом! Вчені створили першого робота, який може розвиватися та змінювати свій код. Він відразу ж навчився верстати сайти та поїхав фрілансити на Балі.</p>
+       </div>
+     </article>
+     <section class="comment-feed container">
+          <h2>Коментарі</h2>
+          <ol class="comment-list">
+            <li class="user-comment">Це не може бути правдою...</li>
+          </ol>
+          <form action="https://instagram.com/if_kompschool" method="post" class="comment-form">
+            <div class="comment-inner">
+              <label class="comment-label" for="comment-input">ваш коментар</label>
+              <input type="text" class="comment-field" placeholder="Коментар" required="" id="comment-input">
+            </div>
+            <button class="button" type="submit">Відправити</button>
+          </form>
+        </section>
+   </main>
+
+       <footer class="page-footer">
+         <div class="container">
+           <p>© FlashNews!</p>
+           <span class="footer-logo">
+             <img src="img/white-logo.svg" alt="Логотип порталу FlashNews!">
+           </span>
+         </div>
+       </footer>
+       <script src="js/script.js"></script>
+     <script src="themes.js"></script>
+     <script src="js/likes.js"></script>
+     <script src="js/comments.js"></script>
+   </body>
+</html>
